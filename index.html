@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoan Phung – Ruby on Rails Architect</title>
+
+  <!-- Custom CSS (loaded last to override GitHub styles) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <header>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>HOAN PHUNG</h1>
+          <div class="subtitle">Ruby on Rails Lead / Software Architect</div>
+          <div class="contact">
+            HCMC, Vietnam ·
+            <a href="mailto:phungthehoan98@gmail.com">phungthehoan98@gmail.com</a> ·
+            +84 398 704 477
+          </div>
+          <button class="download-btn" onclick="downloadPdf('Hoan_Phung_Ruby_Rails_Architect.pdf', 'Hoan_Phung_Ruby_Rails_Architect.pdf')">
+              Download PDF
+          </button>
+
+          <script>
+            function downloadPdf(url, filename) {
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename || 'download'; // Set the download attribute with a proposed filename
+                a.style.display = 'none'; // Hide the element
+                document.body.appendChild(a);
+                a.click(); // Programmatically click the anchor
+                document.body.removeChild(a); // Clean up the DOM
+            }
+          </script>
+        </div>
+        <div class="header-image">
+          <img src="image/golang_ruby2.png" alt="Ruby & Go">
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Senior Ruby on Rails Engineer with 5+ years of experience, transitioning into
+        a Lead / Architect role. Strong background in system design, distributed systems,
+        scalability, and production reliability. Proven ability to lead teams, design
+        microservices, and optimize high-traffic platforms.
+      </p>
+    </section>
+
+    <section>
+      <h2>System Design &amp; Architecture</h2>
+      <ul>
+        <li>Distributed systems &amp; microservices architecture</li>
+        <li>Scalability strategies (horizontal scaling, caching, async processing)</li>
+        <li>High availability, fault tolerance, and resiliency patterns</li>
+        <li>API design, versioning, and backward compatibility</li>
+        <li>Observability: logging, metrics, tracing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+
+      <div class="skills">
+        <div><strong>Backend:</strong> Ruby on Rails, Go (Golang)</div>
+        <div><strong>Databases:</strong> PostgreSQL (indexing, query optimization), MongoDB, Elasticsearch, Redis</div>
+        <div><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, ExtJS</div>
+        <div><strong>Messaging:</strong> Kafka, Sidekiq, background jobs</div>
+        <div><strong>Cloud &amp; DevOps:</strong> AWS, Kubernetes, Jenkins, CI/CD</div>
+        <div><strong>Monitoring:</strong> Grafana, Kibana, Graylog, Sentry</div>
+        <div><strong>AI &amp; Dev Tools:</strong> GitHub Copilot, Kiro, JetBrains IDEs, VS Code</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <h3>DELIVEREE — Senior Software Engineer / Tech Lead</h3>
+        <div class="job-meta">Feb 2022 – Present</div>
+        <ul>
+          <li>Lead production systems, incident response, and hotfixes</li>
+          <li>Design dashboards and high-level queries for system monitoring</li>
+          <li>Optimize Go microservices for performance and stability</li>
+          <li>Mentor engineers and collaborate with product and business teams</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>BESTARION JSC — Full-stack Developer</h3>
+        <div class="job-meta">May 2020 – Feb 2022</div>
+        <ul>
+          <li>Developed healthcare and fintech platforms using Ruby on Rails</li>
+          <li>Built APIs, reporting systems, and mobile integrations</li>
+          <li>Participated in system design and production deployments</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>
+        <strong>Bachelor of Information Technology</strong><br />
+        Ho Chi Minh City University of Food Industry (2016–2020)<br />
+        GPA: 3.01 / 4.0
+      </p>
+    </section>
+
+    <section>
+      <div>
+        <img style="width: 90%" src="image/image.png" alt="PostgreSQL">
+      </div>
+    </section>
+
+    <footer>
+      © Hoan Phung
+    </footer>
+
+  </main>
+
+</body>
+</html>
