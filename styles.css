@@ -52,7 +52,7 @@ h1 {
   margin-top: 6px;
 }
 
-.contact {
+.contact, .dob {
   margin-top: 10px;
   font-size: 20px;
   color: #666;
@@ -141,6 +141,17 @@ h3 {
   filter: grayscale(20%);
 }
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.skills {
+  flex: 1;
+}
+
 .skills > div {
   margin-bottom: 6px;
 }
@@ -219,7 +230,7 @@ footer {
     font-size: 18px;
   }
 
-  .contact {
+  .contact, .dob{
     font-size: 14px;
     word-break: break-word;
   }
@@ -248,6 +259,10 @@ footer {
   }
 
   /* Skills section */
+  .skills-container {
+    flex-direction: column;
+  }
+
   .skills > div {
     font-size: 15px;
     margin-bottom: 10px;
@@ -297,7 +312,7 @@ footer {
     font-size: 16px;
   }
 
-  .contact {
+  .contact, .dob {
     font-size: 13px;
   }
 
